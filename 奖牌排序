@@ -35,7 +35,7 @@ void bubbleSort(Country a[],int n)
 int main()
 {
 	Country c[8];
-	FILE* fp=fopen("D:\\yyl\\file.txt","r");
+	FILE* fp=fopen("D:\\lxr\\file.txt","r");
 	if(fp==NULL)
 	{
 		printf("error\n");
