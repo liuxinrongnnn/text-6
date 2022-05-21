@@ -17,15 +17,15 @@ void printCountry(Country c)
 
 void bubbleSort(Country a[],int n)
 {
-	for(int i=0;i<n-1;i++)
+	for(int i=0;i<n;i++)
 	{
 		for(int j=0;j<n-1;j++)
 		{
-			if(a[j].totalNum>a[j-1].totalNum)
+			if(a[j].goldNum>a[j+1].goldNum)
 			{
 				Country t=a[j];
-				a[j]=a[j-1];
-				a[j-1]=t;
+				a[j]=a[j+1];
+				a[j+1]=t;
 			}
 		}
 	}
@@ -59,3 +59,4 @@ int main()
 	fclose(outfp);
 
 	return 0;
+}
